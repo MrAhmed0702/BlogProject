@@ -97,3 +97,9 @@ Create a .env file in the root folder:
 
 - Ahmed Mohammed Jayanti Mochi
 - https://github.com/MrAhmed0702
+
+## 🙌 Acknowledgements
+
+- Appwrite Docs
+- Tailwind CSS Docs
+- React Hook Form
