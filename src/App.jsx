@@ -5,6 +5,7 @@ import { login, logout } from './store/authSlice'
 import { Footer, Header } from './components'
 import './App.css'
 import { Outlet } from 'react-router-dom'
+import LoginForm from './pages/LoginForm'
 
 function App() {
     const dispatch = useDispatch();
