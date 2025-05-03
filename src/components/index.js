@@ -5,8 +5,12 @@ import Logo from './Logo'
 import LogoutBtn from './Header/LogoutBtn'
 import Button from './Button'
 import Input from './Input'
-import State from './State'
 import PostCard from './PostCard'
 import Login from './Login'
+import RTE from './RTE'
+import Signup from './SignUp'
+import PostForm from './post-form/PostForm'
+import AuthLayout from './AuthLayout'
+import Select from './Select'
 
-export { Header, Footer, Container, Logo, LogoutBtn, Button, Input, State, PostCard, Login }
+export { Header, Footer, Container, Logo, LogoutBtn, Button, Input, PostCard, Login, RTE, Signup, PostForm, AuthLayout, Select } 

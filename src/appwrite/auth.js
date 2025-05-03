@@ -29,7 +29,7 @@ export class AuthService {
 
     async login({ email, password }) {
         try {
-            const userSession = await this.account.createEmailSession(email, password)
+            const userSession = await this.account.createEmailPasswordSession(email, password)
             if (userSession) {
                 return userSession
             }
@@ -42,17 +42,16 @@ export class AuthService {
         try {
             return await this.account.get()
         } catch (error) {
-            throw error
+            return null;
         }
-
-        return null;
     }
 
     async logout() {
         try {
-            return await this.account.deleteSessions()
+            return await this.account.deleteSessions();
         } catch (error) {
-            throw error
+            console.warn("Logout failed or no active session:", error.message);
+            return null;
         }
     }
 
